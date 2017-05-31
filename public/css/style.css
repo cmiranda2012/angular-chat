@@ -1,0 +1,12 @@
+.content div.demo-content {
+    height: 450px;
+}
+
+.content div[ng-controller] {
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+.content md-content {
+    padding: 24px;
+}

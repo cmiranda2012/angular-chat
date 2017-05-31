@@ -1,0 +1,24 @@
+<div class="content" layout="column">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2 class="md-flex">Socket.io Angular Chat</h2>
+        </div>
+    </md-toolbar>
+    <md-content layout="row" layout-align="center center" layout-align-xs="center start" layout-fill>
+        <form name="form" layout-align="center">
+            <md-input-container class="md-block">
+                <label>Username</label>
+                <input ng-enter="join()" name="username" type="text" ng-model="username" minlength="3" maxlength="30" required>
+                <div ng-messages="form.username.$error">
+                    <span ng-message="minlength">Username is too short.</span>
+                    <span ng-message="maxlength">Username is too long.</span>
+                    <span ng-message="required">Username is required.</span>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label for="image">Image Link</label>
+                <input ng-enter="join()" name="image" type="text" ng-model="image">
+            </md-input-container>
+        </form>
+    </md-content>
+</div>
